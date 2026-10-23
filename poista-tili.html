@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Poista käyttäjätili – Vuuvi</title>
+    <style>
+      :root {
+        --bg: #ffffff;
+        --ink: #1b1f24;
+        --muted: #5b6470;
+        --line: #e3e6ea;
+        --accent: #1f6feb;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #111418;
+          --ink: #e8eaed;
+          --muted: #a0a8b3;
+          --line: #2a3038;
+          --accent: #6ea8ff;
+        }
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font: 16px/1.6 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      }
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 32px 16px 64px;
+      }
+      h1 {
+        font-size: 28px;
+        line-height: 1.2;
+        margin: 0 0 4px;
+      }
+      h2 {
+        font-size: 19px;
+        margin: 32px 0 8px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
+      }
+      p,
+      li {
+        margin: 6px 0;
+      }
+      ul {
+        padding-left: 22px;
+      }
+      .muted {
+        color: var(--muted);
+      }
+      a {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+      <h1>Käyttäjätilin poistaminen</h1>
+      <p class="muted">Vuuvi · Tm:i Touko Haapanen</p>
+
+      <h2>Poista tili sovelluksessa</h2>
+      <ol>
+        <li>Avaa Vuuvi ja kirjaudu sisään.</li>
+        <li>Avaa valikko ja valitse <strong>Asetukset</strong>.</li>
+        <li>Valitse <strong>Poista käyttäjätili</strong> ja vahvista poisto.</li>
+      </ol>
+      <p>Tili poistetaan heti.</p>
+
+      <h2>Poista tili sähköpostilla</h2>
+      <p>
+        Jos et pääse sovellukseen, lähetä poistopyyntö osoitteeseen
+        <a href="mailto:toukohaapanen@icloud.com?subject=Vuuvi%3A%20tilin%20poisto">toukohaapanen@icloud.com</a>
+        samasta sähköpostiosoitteesta, jolla tili on luotu. Poistamme tilin 30 päivän kuluessa.
+      </p>
+
+      <h2>Mitä poistetaan</h2>
+      <ul>
+        <li>Profiili: nimi, sähköposti, puhelinnumero, syntymäaika ja profiilikuva</li>
+        <li>Ilmoittautumiset, suosikit, kaveruudet, jäsenyydet ja estot</li>
+        <li>Ilmoitusten vastaanottamiseen käytetyt laitetunnisteet</li>
+      </ul>
+      <p>
+        Varmuuskopioista tiedot poistuvat viimeistään 30 päivän kuluessa. Seuran kirjanpitoon liittyvät maksutiedot voivat
+        säilyä seuralla kirjanpitolain edellyttämän ajan. Lisätietoja <a href="tietosuoja.html">tietosuojaselosteessa</a>.
+      </p>
+    </main>
+  </body>
+</html>
