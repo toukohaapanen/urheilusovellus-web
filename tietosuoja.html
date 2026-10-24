@@ -61,7 +61,7 @@
   <body>
     <main>
       <h1>Tietosuojaseloste</h1>
-      <p class="muted">Vuuvi · Päivitetty 21.10.2026</p>
+      <p class="muted">Vuuvi · Päivitetty 24.10.2026</p>
 
       <p>
         Tässä selosteessa kerrotaan, mitä henkilötietoja Vuuvi (jäljempänä "sovellus") käsittelee, miksi
@@ -87,6 +87,10 @@
         <li><strong>Seurojen ylläpitäjien tiedot:</strong> seuran tiedot, logo, tapahtumat, tiedotteet ja liitetiedostot, joita ylläpitäjä lisää.</li>
         <li><strong>Sijainti:</strong> jos annat luvan, puhelimen sijaintia käytetään tapahtumien etäisyyden laskemiseen. Sijaintisi pysyy puhelimessasi, eikä sitä lähetetä palvelimelle. Voit myös asettaa paikkakunnan käsin.</li>
         <li><strong>Hakuhistoria:</strong> viimeisimmät hakusi tallennetaan vain puhelimeesi.</li>
+        <li><strong>Ilmoitukset:</strong> jos sallit ilmoitukset, puhelimesi ilmoitustunniste tallennetaan, jotta voimme lähettää sinulle esimerkiksi tiedon jonosta nousemisesta.</li>
+        <li><strong>Ilmiannot ja estot:</strong> tekemäsi ilmiannot (kohde, syy ja vapaa kuvaus) sekä käyttäjät, jotka olet estänyt.</li>
+        <li><strong>Seurojen lisäämät tiedot:</strong> seura voi lisätä tapahtumaan osallistujan pelkällä nimellä, vaikka tällä ei olisi sovellusta, ja merkitä osallistujien maksujen tilan.</li>
+        <li><strong>Seuran yhteystiedot:</strong> seuraa luotaessa annetut tiedot, kuten seuran sähköpostiosoite, Y-tunnus ja maksutiedot (MobilePay-numero tai tilinumero).</li>
       </ul>
 
       <h2>3. Mihin tietoja käytetään</h2>
@@ -96,11 +100,15 @@
         <li>maksujen seurantaan seuran ja osallistujan välillä</li>
         <li>seurojen jäsenyyksien, kutsujen ja tiedotteiden hallintaan</li>
         <li>palvelua koskevien sähköpostien lähettämiseen, esimerkiksi kutsut ja tiedot peruttujen tapahtumien osalta</li>
+        <li>ilmoitusten lähettämiseen puhelimeesi, jos olet sallinut ne</li>
+        <li>seurojen tarkistamiseen ennen kuin ne näkyvät muille</li>
+        <li>ilmiantojen käsittelyyn, väärinkäytösten estämiseen ja yhteisön turvallisuuteen</li>
         <li>palvelun ylläpitoon, tietoturvaan ja virheiden korjaamiseen</li>
       </ul>
       <p>
         Käsittely perustuu ensisijaisesti sopimukseen eli palvelun käyttöehtoihin, joiden mukaisesti tarjoamme
-        palvelun sinulle (ks. <a href="kayttoehdot.html">käyttöehdot</a>). Sijainnin käyttö perustuu suostumukseesi, jonka voit perua puhelimen asetuksista.
+        palvelun sinulle (ks. <a href="kayttoehdot.html">käyttöehdot</a>). Sijainnin käyttö ja ilmoitukset perustuvat suostumukseesi, jonka voit perua puhelimen asetuksista. Seurojen
+        tarkistus, ilmiantojen käsittely ja tietoturva perustuvat oikeutettuun etuumme pitää palvelu turvallisena.
       </p>
       <p>Emme käytä tietojasi mainontaan emmekä myy niitä eteenpäin.</p>
 
@@ -113,35 +121,50 @@
         <li><strong>Seuran jäsenille tarkoitetut</strong> tapahtumat ja tiedotteet näkyvät vain seuran jäsenille.</li>
       </ul>
 
-      <h2>5. Palveluntarjoajat</h2>
+      <h2>5. Seurat rekisterinpitäjinä</h2>
+      <p>
+        Seura on itse rekisterinpitäjä niille tiedoille, joita se käsittelee omassa toiminnassaan: jäsenyydet,
+        seuran tapahtumien osallistujat, maksujen tila, kirjanpito sekä nimellä lisätyt osallistujat. Vuuvi
+        käsittelee näitä tietoja seuran puolesta ja seuran ohjeiden mukaisesti
+        (<a href="kasittelysopimus.html">tietojenkäsittelysopimus</a>). Näitä tietoja koskevissa pyynnöissä voit
+        ottaa yhteyttä suoraan seuraan tai meihin, jolloin välitämme pyynnön seuralle.
+      </p>
+      <p>Vuuvi on rekisterinpitäjä käyttäjätilin, profiilin ja muiden tässä selosteessa kuvattujen tietojen osalta.</p>
+
+      <h2>6. Palveluntarjoajat</h2>
       <p>Käytämme seuraavia palveluntarjoajia, jotka käsittelevät tietoja puolestamme:</p>
       <ul>
         <li><strong>Supabase</strong>: tietokanta, kirjautuminen ja tiedostojen tallennus. Tiedot sijaitsevat EU:ssa (Tukholma, Ruotsi).</li>
         <li><strong>Google (Gmail)</strong>: palvelun sähköpostien lähettäminen.</li>
+        <li><strong>Google (Places)</strong>: tapahtumapaikan osoitehaku, kun seura luo tapahtumaa. Googlelle välitetään vain hakusana, ei käyttäjän tietoja.</li>
+        <li><strong>Expo (650 Industries, Yhdysvallat)</strong>: ilmoitusten välittäminen puhelimeen. Expo saa ilmoitustunnisteen ja ilmoituksen sisällön.</li>
+        <li><strong>Telegram</strong>: palvelun ylläpitäjälle lähetettävät ilmoitukset uusista seuroista ja ilmiannoista. Viestit voivat sisältää seuran tiedot sekä ilmiannon tekijän ja kohteen nimen.</li>
         <li><strong>Stripe</strong>: korttimaksut, jos seura ottaa ne käyttöön. Korttitiedot käsittelee suoraan Stripe.</li>
         <li><strong>Apple ja Google</strong>: sovelluksen jakelu App Storen ja Google Playn kautta.</li>
       </ul>
       <p>
-        Jos tietoja siirretään EU:n ulkopuolelle, siirto perustuu Euroopan komission hyväksymiin vakiolausekkeisiin
+        Google, Expo ja Telegram voivat käsitellä tietoja myös EU:n ulkopuolella. Jos tietoja siirretään EU:n
+        ulkopuolelle, siirto perustuu EU:n ja Yhdysvaltojen väliseen tietosuojakehykseen, Euroopan komission hyväksymiin vakiolausekkeisiin
         tai muuhun tietosuoja-asetuksen mukaiseen siirtoperusteeseen.
       </p>
 
-      <h2>6. Kuinka kauan tietoja säilytetään</h2>
+      <h2>7. Kuinka kauan tietoja säilytetään</h2>
       <p>
         Säilytämme tietojasi niin kauan kuin käyttäjätilisi on olemassa. Kun poistat tilisi, profiilisi,
         ilmoittautumisesi, suosikkisi ja profiilikuvasi poistetaan pysyvästi. Varmuuskopioista tiedot poistuvat
         viimeistään noin 30 päivän kuluessa. Seuran kirjanpitoon liittyvät maksutiedot voivat säilyä seuralla
-        kirjanpitolain edellyttämän ajan.
+        kirjanpitolain edellyttämän ajan. Ilmiantoja säilytetään niin kauan kuin se on tarpeen niiden käsittelyyn ja
+        väärinkäytösten estämiseen.
       </p>
 
-      <h2>7. Käyttäjätilin poistaminen</h2>
+      <h2>8. Käyttäjätilin poistaminen</h2>
       <p>
         Voit poistaa tilisi milloin tahansa sovelluksessa: <strong>Asetukset → Poista käyttäjätili</strong>. Voit
         myös pyytää poistoa sähköpostitse osoitteesta <a href="mailto:toukohaapanen@icloud.com">toukohaapanen@icloud.com</a>, jolloin
         poistamme tilin 30 päivän kuluessa.
       </p>
 
-      <h2>8. Oikeutesi</h2>
+      <h2>9. Oikeutesi</h2>
       <p>Sinulla on oikeus:</p>
       <ul>
         <li>saada tieto siitä, mitä tietoja sinusta käsitellään, ja saada niistä kopio</li>
@@ -156,19 +179,19 @@
         <a href="https://tietosuoja.fi">tietosuojavaltuutetun toimistolle</a>.
       </p>
 
-      <h2>9. Ikäraja</h2>
+      <h2>10. Ikäraja</h2>
       <p>
         Sovelluksen käyttö vaatii 18 vuoden iän. Emme tietoisesti kerää alaikäisten tietoja. Jos huomaamme, että
         tilin on luonut alaikäinen, poistamme sen.
       </p>
 
-      <h2>10. Tietoturva</h2>
+      <h2>11. Tietoturva</h2>
       <p>
         Tiedot siirretään salattuina (HTTPS). Tietokannan käyttöoikeudet on rajattu niin, että jokainen käyttäjä ja
         seura näkee vain ne tiedot, joihin sillä on oikeus.
       </p>
 
-      <h2>11. Muutokset</h2>
+      <h2>12. Muutokset</h2>
       <p>
         Voimme päivittää tätä selostetta. Merkittävistä muutoksista kerromme sovelluksessa. Voimassa oleva versio on
         aina tällä sivulla.
